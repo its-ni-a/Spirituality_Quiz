@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirituality Quiz</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Spirituality Quiz</h1>
+        <p id="intro-text">Think you know your Bible? We'll see about that ;) </br>Press Start to begin!</p>
+        
+        <!-- Input field for the user's name -->
+        <input type="text" id="username" placeholder="Enter your name" style="display: block; margin: 10px 0;">
+
+        <button id="start-btn">Start Quiz</button>
+
+        <div id="quiz" style="display: none;">
+            <h3 id="question">Question will appear here</h2>
+            <div id="options"></div>
+            <button id="next-btn" style="display: none;">Next</button>
+        </div>
+
+        <div id="result" style="display: none;">
+            <h2>Your Score: <span id="score"></span>%</h2>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="../static/script.js"></script>
+</body>
+</html>
