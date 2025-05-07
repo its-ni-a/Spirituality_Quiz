@@ -178,3 +178,65 @@ function displayScore() {
         : `Oh no, ${username}, it looks like you need to do some personal study! :)`;
     document.getElementById("message").textContent = message;
 }
+
+
+
+// EDIT AND UNCOMMENT SINCE THIS IS RANDOM QUESTION SELECTION FUNCTION
+/* 
+
+// Questions array
+const questions = [
+    {
+        id: 1,
+        question: "Do you love Jehovah?",
+        options: ["Absolutely", "Sure", "Kind of", "No"],
+        scores: [10, 0, 0, 0],
+    },
+    {
+        id: 2,
+        question: 'After what time did Adam and Eve eat the fruit? <a href="https://www.jw.org/en/library/bible/study-bible/appendix-b/message-of-the-bible/" target="_blank">(Appendix B1)</a>',
+        options: ["4026 B.C.E", "4036 B.C.E", "4035 B.C.E", "4025 B.C.E"],
+        scores: [10, 0, 0, 0],
+    },
+    // ... (other questions)
+    {
+        id: 20,
+        question: 'Which king of Judah did not have a prophet serving during his reign? <a href="https://www.jw.org/en/library/bible/study-bible/appendix-a/kings-of-judah/" target="_blank">Appendix A6-A</a>',
+        options: ["Jehoshaphat", "Rehoboam", "Abijah(Abjijam)", "Ahazaih"],
+        scores: [0, 10, 0, 0],
+    },
+];
+
+// Prompt user for a number between 1 and the number of questions
+const questionsLength = questions.length + 1;
+let input = prompt("Please enter a number between 1 and " + questionsLength + ":");
+
+// Convert input to a number
+input = parseInt(input, 10);
+
+// Validate input
+if (isNaN(input) || input < 1 || input > questions.length) {
+    console.error("Invalid input. Please enter a number between 1 and " + questions.length + ".");
+} else {
+    // Fisher-Yates shuffle algorithm
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // Shuffle questions to get random order without repeats
+    const shuffledQuestions = shuffle(questions.slice());
+
+    // Take only up to 'input' questions from shuffled array
+    const selectedQuestions = shuffledQuestions.slice(0, input);
+
+    // Output the randomly selected unique questions
+    selectedQuestions.forEach(q => {
+        console.log(`Question: ${q.question}`);
+        console.log(`Options: ${q.options.join(', ')}`);
+    });
+}
+*/
