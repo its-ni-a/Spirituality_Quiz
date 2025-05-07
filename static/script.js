@@ -329,3 +329,100 @@ if (isNaN(input) || input < 1 || input > questions.length) {
     });
 }
 */
+
+
+
+// UNCOMMENT TO DISPLAY THE CORRECT ANSWERS FROM THE QUIZ AT THE END
+
+/* const questions = [
+    // ... (your existing questions)
+];
+
+let currentQuestionIndex = 0;
+let score = 0;
+let username = '';
+let userAnswers = []; // Array to store user's answers
+
+document.getElementById("start-btn").addEventListener("click", startQuiz);
+document.getElementById("next-btn").addEventListener("click", showNextQuestion);
+
+function startQuiz() {
+    username = document.getElementById("username").value.trim();
+    if (!username) {
+        alert("Please enter your name to start the quiz.");
+        return;
+    }
+
+    document.getElementById("intro-text").style.display = "none";
+    document.getElementById("username").style.display = "none";
+    document.getElementById("start-btn").style.display = "none";
+    document.getElementById("quiz").style.display = "block";
+    currentQuestionIndex = 0;
+    score = 0;
+    userAnswers = []; // Reset user answers
+    showNextQuestion();
+}
+
+function showNextQuestion() {
+    if (currentQuestionIndex >= questions.length) {
+        displayScore();
+        return;
+    }
+
+    const questionData = questions[currentQuestionIndex];
+    document.getElementById("question").innerHTML = questionData.question;
+
+    const optionsContainer = document.getElementById("options");
+    optionsContainer.innerHTML = "";
+    questionData.options.forEach((option, index) => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.addEventListener("click", () => {
+            score += questionData.scores[index];
+            userAnswers[currentQuestionIndex] = option; // Store user's answer
+            document.getElementById("next-btn").style.display = "block";
+        });
+        optionsContainer.appendChild(button);
+    });
+
+    document.getElementById("next-btn").style.display = "none";
+}
+
+document.getElementById("next-btn").addEventListener("click", () => {
+    currentQuestionIndex++;
+    showNextQuestion();
+});
+
+function displayScore() {
+    document.getElementById("quiz").style.display = "none";
+    document.getElementById("result").style.display = "block";
+
+    const finalScore = (score / (questions.length * 10)) * 100;
+    document.getElementById("score").textContent = finalScore.toFixed(2);
+
+    const message = finalScore >= 70 
+        ? `Yay, ${username}, you did a good job! :)` 
+        : `Oh no, ${username}, it looks like you need to do some personal study! :)`;
+    document.getElementById("message").textContent = message;
+
+    // Display incorrect answers
+    displayIncorrectAnswers();
+}
+
+function displayIncorrectAnswers() {
+    const incorrectContainer = document.getElementById("incorrect-answers");
+    incorrectContainer.innerHTML = "<h3>Incorrect Answers:</h3>";
+    
+    questions.forEach((question, index) => {
+        if (userAnswers[index] !== question.correct[0]) {
+            const incorrectAnswer = document.createElement("div");
+            incorrectAnswer.innerHTML = `
+                <p><strong>Question:</strong> ${question.question}</p>
+                <p><strong>Your Answer:</strong> ${userAnswers[index]}</p>
+                <p><strong>Correct Answer:</strong> ${question.correct[0]}</p>
+            `;
+            incorrectContainer.appendChild(incorrectAnswer);
+        }
+    });
+}
+*/
