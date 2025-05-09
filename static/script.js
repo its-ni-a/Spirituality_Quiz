@@ -85,7 +85,7 @@ const questions = [
     },
     {
         id: 11,
-        question: 'Which Bethel facility has the most tours avaliable? <a href="" target=_blank"></a>',
+        question: 'Which Bethel facility has the most tours avaliable? <a href="https://www.jw.org/en/jehovahs-witnesses/bethel-tours/united-states-america/" target=_blank">Bethel Tours</a>',
         options: ["Patterson", "Fishkill", "Walkill", "Warwick"],
         scores: [10, 0 , 0, 0],
         correct: ["Patterson"],
@@ -132,7 +132,7 @@ const questions = [
     },
     {
         id: 17,
-        question: 'How many Plagues took place in Egypt? <a href="" target=_blank"></a>',
+        question: 'How many Plagues took place in Egypt? <a href="https://wol.jw.org/en/wol/d/r1/lp-e/1101978085" target=_blank">My Book of Bible Stories, Story 32</a>',
         options: ["3", "7", "10", "12"],
         scores: [0, 0 , 10, 0],
         correct: ["10"],
@@ -146,10 +146,10 @@ const questions = [
     },
     {
         id: 19,
-        question: 'Which of the following men was both a judge and a prophet? <a href="" target=_blank"></a>',
-        options: ["Adam", "Abraham", "Enoch", "Moses"],
+        question: 'Which of the following men was both a judge and a prophet? <a href="https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Judge/" target=_blank">Insight on the Scriptures, Judge</a>',
+        options: ["Samson", "Joshua", "Samuel", "Elisha"],
         scores: [0, 0 , 10, 0],
-        correct: ["Enoch"],
+        correct: ["Samuel"],
     },
     {
         id: 20,
@@ -212,21 +212,21 @@ const questions = [
     },
     {
         id: 28,
-        question: 'What year did Jesus become king of God\'s Kingdom? <a href="" target="_blank"></a>',
+        question: 'What year did Jesus become king of God\'s Kingdom? <a href="https://www.jw.org/en/bible-teachings/questions/daniel-4-bible-chronology-1914/" target="_blank">Bible Questions Answered</a>',
         options: ["30 C.E.", "33 C.E.", "1914 C.E.", "1918 C.E."],
         scores: [0, 0 , 10, 0],
         correct: ["1914 C.E."],
     },
     {
         id: 29,
-        question: 'How many men accompanied Gideon to battle against...? <a href="" target="_blank"></a>',
+        question: 'How many men accompanied Gideon to battle against...? <a href="https://www.jw.org/en/library/bible/study-bible/books/judges/7/#v7007007" target="_blank">(Judges 7:7)</a>',
         options: ["300", "400", "1,000", "1,200"],
         scores: [10, 0 , 0, 0],
         correct: ["300"],
     },
     {
         id: 30,
-        question: 'Which of the following women was the first prophetess? <a href="" target=_blank"></a>',
+        question: 'Which of the following women was the first prophetess? <a href="https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Prophetess/" target=_blank">Insight on the Scriptures, Prophetess</a>',
         options: ["Deboarh", "Noadiah", "Miriam", "Anna"],
         scores: [0, 0 , 10, 0],
         correct: ["Miriam"],
