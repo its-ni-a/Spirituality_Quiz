@@ -74,7 +74,7 @@ const questions = [
         question: 'During which missionary tour was Paul shipwrecked? <a href="https://www.jw.org/en/library/bible/study-bible/appendix-b/spread-of-christianity-map/" target="_blank">(Appendix B13)</a>',
         options: ["1st missionary tour", "2nd missionary tour", "3rd missionary tour", "Trip to Rome"], 
         scores: [0, 0, 0, 10],
-        correct: ["3rd missionary tour"],
+        correct: ["Trip to Rome"],
     },
     {
         id: 10,
