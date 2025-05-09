@@ -86,7 +86,7 @@ const questions = [
     {
         id: 11,
         question: 'Which Bethel facility has the most tours avaliable? <a href="" target=_blank"></a>',
-        options: ["Patterson", "Fishkill", "Walkhill", "Warwick"],
+        options: ["Patterson", "Fishkill", "Walkill", "Warwick"],
         scores: [10, 0 , 0, 0],
         correct: ["Patterson"],
     },
