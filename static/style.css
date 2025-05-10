@@ -111,13 +111,60 @@ button:disabled {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .quiz-container {
-        width: 95%;
+        width: 95%
+        ;
         padding: 15px;
     }
     
     #options button {
         padding: 12px;
     }
+} */
+
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .quiz-container {
+        width: 100%;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    #options button {
+        padding: 14px 10px;
+        font-size: 14px;
+    }
+    
+    #next-btn {
+        padding: 10px 20px;
+    }
+
+    input[type="text"], input[type="number"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+/* Fix viewport height issues on mobile */
+@media (max-height: 600px) {
+    body {
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+}
+
+/* Ensure answers don't overflow */
+#question {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+a {
+    word-break: break-all;
 }
