@@ -238,6 +238,41 @@ const questions = [
         scores: [0, 10 , 0, 0],
         correct: ["Rehoboam"],
     },
+    {
+        id: 32,
+        question: 'On average, how many reported Jehovah\'s Witnesses are there in the world? <a href="https://www.jw.org/en/library/books/2024-Service-Year-Report-of-Jehovahs-Witnesses-Worldwide/2024-Grand-Totals/" target="_blank">2024 Grand Totals</a>',
+        options: ["8 million", "8.2 million", "8.5 million", "8.8 million"],
+        scores: [0, 0 , 0, 10],
+        correct: ["8.8 million"],
+    },
+    {
+        id: 33,
+        question: 'How many lands do Jehovah\'s Witnesses currently preach in? <a href="https://www.jw.org/en/library/books/2024-Service-Year-Report-of-Jehovahs-Witnesses-Worldwide/2024-Grand-Totals/" target="_blank">2024 Grand Totals</a>',
+        options: ["120 ", "140", "220", "240"],
+        scores: [0, 0 , 0, 10],
+        correct: ["240"],
+    },
+    {
+        id: 34,
+        question: 'What country has the second most reported Jehova\'s Witnesses? <a href="https://www.jw.org/en/library/books/2024-Service-Year-Report-of-Jehovahs-Witnesses-Worldwide/2024-Country-and-Territory-Reports/" target="_blank">2024 Country and Territory Reports</a>',
+        options: ["The United States", "Mexico", "Japan", "Canada"],
+        scores: [0, 10 , 0, 0],
+        correct: ["Mexico"],
+    },
+    {
+        id: 35,
+        question: 'Which two scriptures almost the exact same thing? <a href="https://www.jw.org/en/library/bible/study-bible/books/proverbs/22/#v20022003" target="_blank">The scriptures are in either Psalms or Proverbs :)</a>',
+        options: ["Psalm 14:1 and Proverbs 14:1", "Proverbs 22:3 and Proverbs 27:12", "Psalm 103:20 and Psalm 103:2", "Psalm 148:7 and Psalm 117:1"],
+        scores: [0, 10 , 0, 0],
+        correct: ["Proverbs 22:3 and Proverbs 27:12"],
+    },
+    {
+        id: 36,
+        question: 'What mountain did David rule over? <a href="https://www.jw.org/en/library/books/Insight-on-the-Scriptures/Zion/" target="_blank">Insight on the Scriptures</a>',
+        options: ["Zion", "Sinai", "Horeb", "Moriah"],
+        scores: [10, 0 , 0, 0],
+        correct: ["Zion"],
+    },
     // Add more questions here
 ];
 
