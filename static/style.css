@@ -96,6 +96,8 @@ button:disabled {
     background-color: #d4edd9 !important;
     border: 1px solid #c3e6c5 !important;
     color: #15572d !important;
+    font-weight: bold;
+
 }
 
 .incorrect {
